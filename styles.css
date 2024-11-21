@@ -12,12 +12,11 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: #111827;
-    color: #FBBF24;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    background: #111827; /* Dark background */
+    color: #FBBF24; /* Accent gold color */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative; /* Remove sticky positioning */
+    z-index: 1000; /* Ensure it appears above other elements if necessary */
 }
 header .header-container {
     max-width: 800px;
