@@ -8,13 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>Benjamin Garcia</h1>
-        <p>Computer Science Undergraduate | Riverside, CA</p>
+        <div class="header-container">
+            <img src="profile_pic.png" alt="Benjamin Garcia" class="profile-pic">
+            <h1>Benjamin Garcia</h1>
+            <p>Computer Science Undergraduate | Riverside, CA</p>
+        </div>
         <nav>
             <a href="#about">About Me</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -23,48 +27,102 @@
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Ever since I was introduced to computers as a kid, I've been passionate about technology.
-                With experience in programming, artificial intelligence, and software engineering, I aim to
-                tackle challenges head-on with an optimistic and growth-oriented mindset.
+                My journey in technology began in childhood, fueled by curiosity and a passion for computers.
+                Today, I’m a computer science undergraduate eager to explore artificial intelligence,
+                software engineering, and advanced algorithms to solve real-world problems.
+                Driven by determination, I view every challenge as an opportunity to grow.
             </p>
         </section>
 
         <section id="education">
             <h2>Education</h2>
-            <p><strong>California State University, San Bernardino</strong></p>
-            <ul>
-                <li>Bachelor of Science in Computer Science (In Progress)</li>
-                <li>Cumulative GPA: 3.867</li>
-                <li>Dean’s List every semester</li>
-            </ul>
+            <div class="card">
+                <h3>California State University, San Bernardino</h3>
+                <ul>
+                    <li>Bachelor of Science in Computer Science (In Progress)</li>
+                    <li>Cumulative GPA: 3.867</li>
+                    <li>Dean’s List every semester</li>
+                </ul>
+            </div>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>Proficient in Python, C++, C, Artificial Intelligence, and Machine Learning</li>
-                <li>Experienced with Parallel Programming (MPI/OpenMP/CUDA) and Data Analysis</li>
-                <li>Strong knowledge of AGILE methodology, SCRUM meetings, and team leadership</li>
-                <li>Professional experience with software documentation and project management</li>
-            </ul>
+            <div class="card">
+                <ul>
+                    <li>Languages: Python, C++, C</li>
+                    <li>Specialties: AI, Machine Learning, Parallel Programming</li>
+                    <li>Tools: GitHub, Gantt Charts, Google Workspace</li>
+                    <li>Soft Skills: Leadership, Agile Development, Communication</li>
+                </ul>
+            </div>
         </section>
 
         <section id="experience">
             <h2>Experience</h2>
-            <p>
-                <strong>Research Assistant</strong> - AI/ML Summer Research Program<br>
-                Learned to conduct literature reviews, explored AI research questions, and gained hands-on experience in machine learning.
-            </p>
-            <p>
-                <strong>Team Leader</strong> - Academic Group Projects<br>
-                Coordinated project timelines, led SCRUM meetings, and ensured successful submission of assignments, all graded A.
-            </p>
+            <div class="card">
+                <p>
+                    <strong>Research Assistant</strong> - Summer AI/ML Research<br>
+                    Conducted literature reviews, explored AI applications, and developed machine learning models.
+                </p>
+                <p>
+                    <strong>Team Leader</strong> - Academic Projects<br>
+                    Managed SCRUM meetings, project timelines, and development, ensuring successful project submissions.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>AI Chatbot for CSUSB IT Helpsite</h3>
+                <p>
+                    Developed an AI-powered chatbot, <strong>Tataru Chatbot</strong>, to assist users with IT-related queries
+                    at California State University, San Bernardino. The chatbot streamlines access to resources
+                    and improves the user experience on the IT help website.
+                </p>
+                <p>
+                    View the project on GitHub:
+                    <a href="https://github.com/Bengiladash/Tataru_Chatbot" target="_blank">Tataru Chatbot</a>
+                </p>
+            </div>
+            <div class="card">
+                <h3>OpenCV Project: Reading Playing Cards</h3>
+                <p>
+                    Helped in Designing a machine vision algorithm using OpenCV to identify and classify playing cards
+                    from a standard 52-card deck. The project integrates advanced image recognition techniques
+                    for real-world applications like card games and object detection.
+                </p>
+                <p>
+                    View the project on GitHub:
+                    <a href="https://github.com/ramirez09r/OpenCV_Project" target="_blank">OpenCV Playing Cards</a>
+                </p>
+            </div>
+            <div class="card">
+                <h3>Minimax and Negamax Algorithms</h3>
+                <p>
+                    Implemented game-playing algorithms such as Minimax and Negamax to enable decision-making
+                    in turn-based games like chess or tic-tac-toe. Enhanced the algorithms with pruning techniques
+                    to optimize performance and computational efficiency.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Machine Learning Algorithms</h3>
+                <p>
+                    Developed machine learning models using supervised and unsupervised techniques.
+                    Projects included predicting trends using regression models and clustering data for analysis,
+                    demonstrating a strong foundation in AI and data science.
+                </p>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:xbenlordx@hotmail.com">xbenlordx@hotmail.com</a></p>
-            <p>Phone: 951-505-3162</p>
+            <div class="card">
+                <p>Email: <a href="mailto:xbenlordx@hotmail.com">xbenlordx@hotmail.com</a></p>
+                <p>Phone: 951-505-3162</p>
+                <p>Location: Riverside, CA</p>
+            </div>
         </section>
     </main>
 
