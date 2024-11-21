@@ -1,8 +1,8 @@
 /* General Reset */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #1E293B;
+    font-family: 'Arial', sans-serif;
+    background-color: #1E293B; /* Dark blue */
     color: #FFFFFF;
     scroll-behavior: smooth;
     line-height: 1.6;
@@ -12,16 +12,11 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background: #111827; /* Dark background */
-    color: #FBBF24; /* Accent gold color */
+    background: #111827; /* Darker background */
+    color: #FBBF24; /* Accent gold */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    position: relative; /* Remove sticky positioning */
-    z-index: 1000; /* Ensure it appears above other elements if necessary */
 }
-header .header-container {
-    max-width: 800px;
-    margin: auto;
-}
+
 header .profile-pic {
     width: 120px;
     height: 120px;
@@ -30,24 +25,29 @@ header .profile-pic {
     object-fit: cover;
     margin-bottom: 15px;
 }
-header h1 {
-    font-size: 2.2em;
-    margin: 0;
+
+/* Sticky Navigation Bar */
+.sticky-nav {
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    background: #111827; /* Matches header's background */
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 2px solid #FBBF24; /* Adds a gold border at the bottom */
 }
-header p {
-    font-size: 1.2em;
-}
-nav {
-    margin-top: 15px;
-}
-nav a {
+
+.sticky-nav a {
     color: #FBBF24;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
     font-size: 1em;
 }
-nav a:hover {
+
+.sticky-nav a:hover {
     color: #FFFFFF;
 }
 
@@ -57,9 +57,12 @@ main {
     margin: 20px auto;
     padding: 10px;
 }
+
 section {
-    margin: 40px 0;
+    margin: 60px 0; /* Add more margin to avoid clipping */
+    scroll-margin-top: 70px; /* Prevent header clipping when scrolling to an ID */
 }
+
 section h2 {
     color: #FBBF24;
     font-size: 1.8em;
@@ -68,18 +71,31 @@ section h2 {
     display: inline-block;
     padding-bottom: 5px;
 }
+
 .card {
-    background-color: #374151;
+    background-color: #374151; /* Slightly lighter background for cards */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
+
 .card ul {
     list-style-type: disc;
     padding-left: 20px;
 }
+
 .card p {
     margin: 10px 0;
+}
+
+.card a {
+    color: #FBBF24;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
